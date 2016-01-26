@@ -4,3 +4,11 @@ function getQuote () {
   console.log(quoteReturned);
   document.getElementById("quote").innerHTML = quoteReturned;
 }
+
+function tweetIt () {
+  var phrase = document.getElementById('quote').innerText;
+  var tweetUrl = 'https://twitter.com/share?text=' +
+    encodeURIComponent(phrase);
+    
+  window.open(tweetUrl);
+}
