@@ -45,3 +45,7 @@ p {
   min-width: 20em;
   min-height: 1em;
 }
+
+#tweet {
+  cursor: pointer;
+  }
